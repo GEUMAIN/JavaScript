@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let txt1 = "성일정보";
+        let txt2 = "고등학교";
+        document.write(txt1+txt2+"<br>");
+
+        let txt3 = "우리학교 학과 수 : ";
+        let num1 = 7;
+        document.write(txt3+num1+"<br>");
+
+        let num2 = 200;
+        let num3 = 300;
+        let txt4 = String(1000);
+        document.write(num2+num3+txt4+"<br>");
+
+        let addText = "성일";
+        addText+="정보";
+        addText+="고등";
+        addText+="학교";
+        document.write(addText);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
