@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        // 사이트 들어갈 때 입력하게 해주고 입력하면 저장하는거
+        // 질문다음 ,"(쓸 내용)"이라고 쓰면 입력하지 않아도 해당 내용을 미리 적어둔다
+        let gender = prompt("당신의 성별은?","남성");
+        let age = prompt("당신의 나이는?", "20");
+        //age가 2보다 많고 35보다 적고 성별이 남성이면 true
+        let result = age>=20 && age <= 35 && gender == "남성";
+        document.write(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
