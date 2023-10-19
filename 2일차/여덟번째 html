@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let korean = Number(prompt("국어점수는?","0"));
+        let english = Number(prompt("영어점수는?","0"));
+        let math = Number(prompt("수학점수는?","0"));
+        let avg = (korean+english+math)/3;
+        let result = avg>=70 && korean >= 50 && english >= 50 && math >= 50;
+        document.write(avg+"<br>");
+        document.write(result+"<br>");
+        document.write((result==true) ? "pass" : "fail");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
