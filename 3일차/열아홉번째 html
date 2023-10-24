@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.write("<h1>현재 날짜/시간 정보</h1>")
+        let today = new Date();
+        let nowMonth = today.getMonth()+1; // 0 ~ 11 받아오기 때문에 +1을 해줘야 함.
+        let nowDate = today.getDate(); // 현재 일
+        let nowDay = today.getDay(); // 현재 요일(0:일요일 ~ 6:토요일)
+        let nowHour = today.getHours(); // 현재 시간
+        let nowMinutes = today.getMinutes(); // 현재 분
+        let nowSeconds = today.getSeconds(); // 현재 초
+        let nowTime = today.getTime(); // 1970년 1월 1일부터 경과된 시간
+        // if (nowDay = 0){
+        //     nowDayH = "일요일"
+        // }else if (nowDay = 1){
+        //     nowDayH = "월요일"
+        // }else if (nowDay = 2){
+        //     nowDayH = "화요일"
+        // }else if (nowDay = 3){
+        //     nowDayH = "수요일"
+        // }else if (nowDay = 4){
+        //     nowDayH = "목요일"
+        // }else if (nowDay = 5){
+        //     nowDayH = "금요일"
+        // }else if (nowDay = 6){
+        //     nowDayH = "토요일"
+        // };
+        switch (nowDay){
+            case 0 :
+                nowDayH = "일요일";
+                break;
+            case 1 :
+                nowDayH = "월요일";
+                break;
+            case 2 :
+                nowDayH = "화요일";
+                break;
+            case 3 :
+                nowDayH = "수요일";
+                break;
+            case 4 :
+                nowDayH = "목요일";
+                break;
+            case 5 :
+                nowDayH = "금요일";
+                break;
+            case 6 :
+                nowDayH = "토요일";
+                break;
+        }
+        switch (nowHour % 12){
+            case 0 :
+                nowHourH = "12시";
+                break;
+            case 1 :
+                nowHourH = "1시";
+                break;
+            case 2 :
+                nowHourH = "2시";
+                break;
+            case 3 :
+                nowHourH = "3시";
+                break;
+            case 4 :
+                nowHourH = "4시";
+                break;
+            case 5 :
+                nowHourH = "5시";
+                break;
+            case 6 :
+                nowHourH = "6시";
+                break;
+            case 7 :
+                nowHourH = "7시";
+                break;
+            case 8 :
+                nowHourH = "8시";
+                break;
+            case 9 :
+                nowHourH = "9시";
+                break;
+            case 10 :
+                nowHourH = "10시";
+                break;
+            case 11 :
+                nowHourH = "11시";
+                break;
+        }
+        //월
+        document.write("월 : ");
+        document.write(nowMonth + "<br>");
+        //현재 일
+        document.write("현재 일 : ");
+        document.write(nowDate+ "<br>");
+        //현재 요일
+        document.write("현재 요일 : ");
+        document.write(nowDay+ "<br>");
+        document.write(nowDayH+ "<br>");
+        //현재 시간
+        document.write("현재 시간 : ");
+        document.write(nowHour+ "<br>");
+        document.write(nowHourH+ "<br>");
+        //현재 분
+        document.write("현재 분 : ");
+        document.write(nowMinutes+ "<br>");
+        //현재 초
+        document.write("현재 초 : ");
+        document.write(nowSeconds+ "<br>");
+        //1970년대부터 흐른 시간
+        document.write("1970년대부터 흐른 초 : ");
+        document.write(nowTime+ "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
