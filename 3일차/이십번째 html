@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //최댓값
+        let maxNum = Math.max(30,70,5);
+        document.write("(30,70,5) 최댓값 : "+ maxNum + "<br>");
+
+        //최솟값
+        let minNum = Math.min(30,70,5);
+        document.write("(30,70,5) 최솟값 : "+ minNum + "<br>");
+
+        //반올림
+        let roundNum = Math.round(3.5);
+        document.write("(3.5) 반올림 : "+ roundNum + "<br>");
+
+        //올림
+        let ceilNum = Math.ceil(3.5);
+        document.write("(3.5) 올림 : "+ ceilNum + "<br>");
+
+        //내림
+        let floorNum = Math.floor(6.7);
+        document.write("(6.7) 내림 : "+ floorNum + "<br>");
+
+        //절댓값
+        let absNum = Math.abs(-10);
+        document.write("(-10) 절댓값 : "+ absNum + "<br>");
+
+        //랜덤값
+        let ranNum = Math.random();
+        document.write("난수(0~1) 랜덤값 : "+ ranNum + "<br>");
+
+        //루트값
+        let sqrtNum = Math.sqrt(4);
+        document.write("(4) 루트값 : "+ sqrtNum + "<br>");
+    </script>
+</head>
+<body>
