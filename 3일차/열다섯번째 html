@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let num = 10
+        while (num >= 2){
+            document.write(num +"<br>");
+            num -= 2;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
