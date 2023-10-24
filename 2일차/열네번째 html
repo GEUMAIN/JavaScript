@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 프롬포트 이용 지역을 입력 받음
+        // (서울, 경기, 강원, 부산)
+        // 지역번호 02, 031, 033, 051
+
+        // 프롬포트에 지역을 입력하면, areaNum 라는 변수에 해당되는 지역번호를 저장한다.
+        // 서울, 경기, 강원, 부산 외 지역을 입력하면,
+        // 등록되지 않은 지역입니다. 를 출력
+        let myArea = prompt("지역을 입력해주세요", "서울");
+        let areanum;
+        switch (myArea)
+        {
+            case "서울":
+                areaNum = "02";
+                break;
+                
+            case "경기":
+                areaNum = "031";
+                break;
+                
+            case "강원":
+                areaNum = "033";
+                break;
+                
+            case "부산":
+                areaNum = "051";
+                break;
+
+            default:
+                alert("등록되지 않은 지역입니다.")
+        }
+        document.write(myArea+"의 지역번호는"+areaNum);
+    </script>
+</body>
+</html>
