@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let theFood = ["짜장면","냉면","갈비탕","돈까스","삼겹살"];
+        console.log(theFood);
+
+        // let theFoodR = new Array();
+        // for (let i = theFood.length-1; i>=0; i--){
+        //     theFoodR[4-i] = theFood[i];
+        // }
+        // console.log(theFoodR);
+
+        theFood.reverse();
+        console.log(theFood);
+
+        let theSubway = ["2호선","9호선","7호선","4호선","3호선"];
+        theSubway.sort(); //오름차순 정렬, 가장 앞에 숫자가 와서 숫자로 정렬
+        console.log(theSubway);
+
+        let mountain1 = ["남산","도봉산","관악산","청계산","북한산"];
+        let mountain2 = ["설악산","지리산","한라산","속리산"];
+        let mountainU = mountain1.concat(mountain2); //배열 합치기
+        console.log(mountainU);
+
+        let theName = ["홍길동","장발장","임꺽정","로미오","줄리엣"];
+        let theNameS = theName.slice(2,4); //임꺽정(2) 로미오(4)만 잘라오기 !! 4인 이유: 끝은 포함해주지 않아서 뒤로 한칸 해줘야함
+        console.log(theNameS);
+
+        let theProduct = ["냉장고","컴퓨터","선풍기","밥솥","스마트폰"];
+        let joinData = theProduct.join(","); //배열을 하나의 문장으로 만들고 ","로 구분 짓겠다는 뜻
+        console.log(joinData);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
