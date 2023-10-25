@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let theSubway = ["2호선","9호선","7호선","4호선","3호선"];
+        let newline1 = "1호선";
+        let newline2 = "분당선";
+
+        theSubway.shift(); //왼쪽으로 밀기
+        console.log(theSubway); //왼쪽으로 밀어버려서 2호선이 배열 밖으로 나가버림
+
+        theSubway.unshift(newline1); //반대로 들어오는거라서 newline1이 배열에 들어옴
+        console.log(theSubway); // 오른쪽으로 밀기 & newline1 삽입
+
+        let sub = theSubway.pop(); //최상위(맨 마지막)에 있는거를 뽑아서 버림
+        console.log(sub); //뽑은 값을 sub에 넣어서 sub을 출력하면 3호선이 나온다
+
+        theSubway.push(newline2); //해당 값을 넣는거라서 배열에 마지막엔 분당선이 들어온다.
+        console.log(theSubway);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
