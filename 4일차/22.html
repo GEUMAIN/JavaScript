@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.write("<h3>문자 치환</h3>");
+        let theText1 = "img2_out.jpg";
+        document.write(theText1 + "<br>");
+        theText1 = theText1.replace("out.jpg","in.jpg"+"<br>");
+        document.write(theText1 + "<br>");
+
+
+        document.write("<h3>문자 분할 및 추출</h3>");
+        let theText2 = "images/img10.jpg";
+        document.write(theText2 + "<br>");
+        theText2 = theText2.split("/")[1];
+        // /를 기준으로 2개로 분할됨 images img10.jpg
+        // [0] images [1] img10.jpg로 분할
+        document.write(theText2 + "<br>");
+        theText2 = theText2.substring(3);   //3(1)부터 시작해서 끝까지
+        document.write(theText2 + "<br>");
+        theText2 = parseInt(theText2 + "<br>"); //숫자 값으로 바꿔줌
+        document.write(theText2 + "<br>");
+        // 주의점!
+        // 10.4 -> 10 실수형은 정수형으로 
+        // 11 -> 11
+        // 10.jpg -> 10
+        // img10 -> error 붙어있으면 안됨
+        document.write("<h3>마지막 문자 추출</h3>");
+        let theText3 = "hello javascript";
+        let theText3L = theText3.length;
+        document.write("문자 길이 : "+ theText3L + "<br>");
+        let lastIndexOf = theText3.length -1;
+        theText3 = theText3.charAt(lastIndexOf);
+        document.write("마지막 문자 : "+ theText3 + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
