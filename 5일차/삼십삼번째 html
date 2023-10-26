@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //지역 변수는 전역변수에 영향을 끼치지 않는다
+        let i = 10;
+        let num = 20;
+        function theTest(){
+            let num = i + 200;
+            alert(num);
+        }
+        theTest();
+
+        function theFnc(){
+            document.write(num);
+        }
+        theFnc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
