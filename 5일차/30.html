@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let i = 0;
+        //재귀 함수를 이용하여 안녕하세요1~ 안녕하세요 10까지 출력하시오
+        function theTest(){
+                i++;
+                document.write("안녕하세요"+i+"<br>");
+                if (i < 10){
+                    theTest();
+                };
+        }
+
+        theTest();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
