@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let result = "10+20";
+        document.write("eval 쓰기 전 : "+ result +"<br>");
+        let result1 = eval("10+20"); //엄청 강력한 기능이지만 관리자기능이라 실행속도,보안 면에서 쓰면 안 좋음(문자열을 숫자처리해줌)
+        document.write("eval 쓴 후 : "+ result1 +"<br>");
+
+        let num = 100;
+        document.write("eval 쓰기 전 : " + "num"+10+"<br>");
+        document.write(eval("num")+10+"<br>");
+
+        let result2 = isNaN("010-1234-4153") //숫자인지 아닌지 구분해줌 숫자면 false 문자면 true
+            document.write(result2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
