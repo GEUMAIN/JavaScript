@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let result = "10+20";
+        document.write("eval 쓰기 전 : "+ result +"<br>");
+        let result1 = eval("10+20"); //엄청 강력한 기능이지만 관리자기능이라 실행속도,보안 면에서 쓰면 안 좋음(문자열을 숫자처리해줌)
+        document.write("eval 쓴 후 : "+ result1 +"<br>");
+
+        let num = 100;
+        document.write("eval 쓰기 전 : " + "num"+10+"<br>");
+        document.write(eval("num")+10+"<br>");
+
+        let result2 = isNaN("010-1234-4153") //숫자인지 아닌지 구분해줌 숫자면 false 문자면 true
+        document.write(result2);
+
+        // 내장함수 : 자바스크립트에서 사용자의 편의를 위해 제공하는 함수
+
+        // eval() : 문자열을 자바스크립트 문장으로 변환(수식은 계산식으로, 문자는 변수로)
+        // parseInt() : 숫자를 정수로 변환
+        // parseFloat() : 숫자를 실수로 변환
+        // isNaN() : "Not a number"의 약자로 숫자가 아닌 문자가 포함되면 true로 반환
+        // isFinite() : 주어진 값이 유리수인지 판단
+        // Number() : 문자를 숫자형으로 변환
+        // String() : 숫자를 문자형으로 변환
+        // escape() : 문자를 16진수 아스키코드로 변환
+        // unescape() : escape()로 변환된 값을 다시 되돌려 반환
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
