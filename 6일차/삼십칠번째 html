@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function theFnc(){
+            alert("JavaScript!!!");
+        }
+        function clickBtn(){
+            let myBtn = document.getElementById("btn1");
+            myBtn.onclick = theFnc;
+        }
+        function clickBtn2() {
+            let myBtn2 = document.getElementById("btn2");
+            myBtn2.onclick = theFnc;
+        }
+        if (window.addEventListener){ //표준 방식 브라우저
+            window.addEventListener("load",clickBtn,false);
+            window.addEventListener("load",clickBtn2,false);
+        }else if(window.attachEvenet){ // 비표준 방식 브라우저 (IE 8 이하)
+            window.attachEvenet("onload",clickBtn);
+            window.attachEvenet("onload",clickBtn2);
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+</body>
+</html>
